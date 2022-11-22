@@ -1,7 +1,12 @@
 import "./resources/styles.css";
+import { Header } from "./components/Header";
 
-function App() {
-  return <h1 className="App">the venue testing </h1>;
-}
+const App = () => {
+  return (
+    <div className="App">
+      <Header />
+    </div>
+  );
+};
 
 export default App;
