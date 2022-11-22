@@ -5,7 +5,7 @@ export const Featured = () => {
     <div className="featured_container">
       <Carousel />
       <div className="artist_name">
-        <div className="wrapper">Ariana grande</div>
+        <div className="wrapper">Adedayo Victor</div>
       </div>
     </div>
   );
