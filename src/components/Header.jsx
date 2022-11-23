@@ -15,11 +15,11 @@ export const Header = () => {
 
   const handleScroll = () => {
     if (window.scrollY > 0) {
-      console.log("scrolling");
+      // console.log("scrolling");
       setHeaderShow(true);
     } else {
       setHeaderShow(false);
-      console.log("back to top");
+      // console.log("back to top");
     }
   };
   useEffect(() => {
@@ -34,6 +34,7 @@ export const Header = () => {
         backgroundColor: headerShow ? "#2f2f2f" : "transparent",
         boxShadow: "none",
         padding: "10px 10px",
+        maxWidth: "150rem",
       }}
     >
       <Toolbar>
