@@ -1,4 +1,5 @@
 import { Carousel } from "./Carousel";
+import { TimeUntil } from "./TimeUntil";
 
 export const Featured = () => {
   return (
@@ -7,6 +8,7 @@ export const Featured = () => {
       <div className="artist_name">
         <div className="wrapper">Adedayo Victor</div>
       </div>
+      <TimeUntil />
     </div>
   );
 };
