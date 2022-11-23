@@ -9,7 +9,7 @@ export const Location = () => {
         title="gglemaps"
         allowFullScreen
         loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
+        referrerPolicy="no-referrer-when-downgrade"
       ></iframe>
 
       <div className="location_tag">
