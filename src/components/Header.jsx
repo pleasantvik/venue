@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import { AppBar, Toolbar, IconButton } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import { SideDrawer } from "./SideDrawer";
+import classes from "./Header.module.css";
 
 export const Header = () => {
   //State For opening and closing drawer
@@ -29,18 +30,16 @@ export const Header = () => {
 
   return (
     <AppBar
-      position="fixed"
       sx={{
         backgroundColor: headerShow ? "#2f2f2f" : "transparent",
         boxShadow: "none",
         padding: "10px 10px",
-        maxWidth: "150rem",
       }}
     >
       <Toolbar>
-        <div className="header_logo">
-          <div className="font_righteous header_logo_venue">The Experience</div>
-          <div className="header_logo_title">Musical Events</div>
+        <div className={classes.header_logo}>
+          <div className={classes.header_logo_venue}>The Experience</div>
+          <div className={classes.header_logo_title}>Musical Events</div>
         </div>
         <IconButton
           aria-label="Menu"

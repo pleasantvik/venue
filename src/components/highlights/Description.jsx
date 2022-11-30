@@ -1,10 +1,11 @@
 import { Fade } from "react-awesome-reveal";
+import classes from "./Description.module.css";
 export const Description = () => {
   return (
     <Fade>
-      <div className="center_wrapper">
+      <div className={classes.center_wrapper}>
         <h2>Highlights</h2>
-        <div className="highlight_description">
+        <div className={classes.highlight_description}>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
           quisquam expedita eius tenetur totam ex soluta hic sit itaque
           perspiciatis atque consequatur, natus eos, quidem tempora ab facere
