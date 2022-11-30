@@ -1,3 +1,4 @@
+import classes from "./Discount.module.css";
 import { useState, useEffect } from "react";
 import { Fade, Slide } from "react-awesome-reveal";
 import { MyButton } from "../utils/MyButton";
@@ -18,8 +19,8 @@ export const Discount = () => {
     }
   }, [start]);
   return (
-    <div className="center_wrapper">
-      <div className="discount_wrapper">
+    <div className={classes.center_wrapper}>
+      <div className={classes.discount_wrapper}>
         <Fade
           onVisibilityChange={(inView) => {
             // console.log(inView);
@@ -28,13 +29,13 @@ export const Discount = () => {
             }
           }}
         >
-          <div className="discount_percentage">
+          <div className={classes.discount_percentage}>
             <span>{start}%</span>
             <span>OFF</span>
           </div>
         </Fade>
         <Slide right>
-          <div className="discount_description">
+          <div className={classes.discount_description}>
             <h3>Purchase the ticket before 25th December</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.

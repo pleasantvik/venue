@@ -1,3 +1,4 @@
+import classes from "./Pricing.module.css";
 import { MyButton } from "../utils/MyButton";
 import { Zoom } from "react-awesome-reveal";
 export const Pricing = () => {
@@ -29,14 +30,14 @@ export const Pricing = () => {
   ];
   const showBox = () =>
     priceState.map((box, i) => (
-      <Zoom key={i} className="pricing_item" delay={box.delay}>
-        <div className="pricing_inner_wrapper">
-          <div className="pricing_title">
+      <Zoom key={i} className={classes.pricing_item} delay={box.delay}>
+        <div className={classes.pricing_inner_wrapper}>
+          <div className={classes.pricing_title}>
             <span>${box.price}</span>
             <span>${box.position}</span>
           </div>
-          <div className="pricing_description">{box.description}</div>
-          <div className="pricing_buttons">
+          <div className={classes.pricing_description}>{box.description}</div>
+          <div className={classes.pricing_buttons}>
             <MyButton
               text="Purchase"
               sx={{ color: "#fff" }}
@@ -47,10 +48,10 @@ export const Pricing = () => {
       </Zoom>
     ));
   return (
-    <div className="bck_black pricing_wrapper">
-      <div className="center_wrapper pricing_section">
+    <div className={classes.pricing_wrapper}>
+      <div className={`${classes.center_wrapper} ${classes.pricing_section}`}>
         <h2>Pricing</h2>
-        <div className="pricing_wrapper">{showBox()}</div>
+        <div className={classes.pricing_wrapper}>{showBox()}</div>
       </div>
     </div>
   );

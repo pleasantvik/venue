@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
 import { Slide } from "react-awesome-reveal";
+import classes from "./TimeUntil.module.css";
 
 export const TimeUntil = () => {
   const [time, setTime] = useState({
@@ -9,9 +10,9 @@ export const TimeUntil = () => {
     seconds: "0",
   });
   const renderItems = (time, value) => (
-    <div className="countdown_item">
-      <div className="countdown_time">{time}</div>
-      <div className="countdown_tag">{value}</div>
+    <div className={classes.countdown_item}>
+      <div className={classes.countdown_time}>{time}</div>
+      <div className={classes.countdown_tag}>{value}</div>
     </div>
   );
 
@@ -39,9 +40,9 @@ export const TimeUntil = () => {
   }, [getTimeUntil]);
   return (
     <Slide>
-      <div className="countdown_wrapper">
-        <div className="countdown_top">Events start in</div>
-        <div className="countdown_bottom">
+      <div className={classes.countdown_wrapper}>
+        <div className={classes.countdown_top}>Events start in</div>
+        <div className={classes.countdown_bottom}>
           {renderItems(time.days, "Days")}
           {renderItems(time.hours, "Hr")}
           {renderItems(time.minutes, "Min")}
