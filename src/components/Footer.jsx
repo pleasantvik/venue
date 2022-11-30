@@ -5,9 +5,9 @@ export const Footer = () => {
     <footer className={classes.footer_bck_red}>
       <Fade triggerOnce delay={500}>
         <div className={classes.header_logo}>
-          <div className={classes.footer_logo_venue}>The Venue</div>
+          <div className={classes.footer_logo_venue}>The Experience</div>
           <div className={classes.footer_copyright}>
-            The venue 2022, &copy; all rights reserved
+            The Experience 2023, &copy; all rights reserved
           </div>
         </div>
       </Fade>
